@@ -1,0 +1,4 @@
+Tokens: select * from id(alumnos) where id(edad) > num(18) and ; $
+
+Resultado: RECHAZADA
+Error sintáctico en 1:42: no se esperaba ';' (ACCION[27, ;] está vacía). Se esperaba: not, id, num, str, (.

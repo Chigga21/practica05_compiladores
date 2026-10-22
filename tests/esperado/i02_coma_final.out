@@ -1,0 +1,4 @@
+Tokens: select id(nombre) , from id(alumnos) ; $
+
+Resultado: RECHAZADA
+Error sintáctico en 1:16: no se esperaba 'from' (ACCION[10, from] está vacía). Se esperaba: id.

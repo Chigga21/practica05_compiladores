@@ -1,0 +1,4 @@
+Tokens: $
+
+Resultado: RECHAZADA
+Error sintáctico en 2:1: no se esperaba el fin de la entrada (ACCION[0, $] está vacía). Se esperaba: select.

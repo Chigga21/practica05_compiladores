@@ -1,0 +1,23 @@
+Tokens: select id(nombre) from id(alumnos) where id(promedio) > num(9) or id(beca) = num(1) and id(activo) = num(1) ; $
+
+Resultado: ACEPTADA
+
+AST:
+Script
+└── Select
+    ├── Columnas
+    │   └── id(nombre)
+    ├── Tabla
+    │   └── id(alumnos)
+    └── Where
+        └── OR
+            ├── >
+            │   ├── id(promedio)
+            │   └── num(9)
+            └── AND
+                ├── =
+                │   ├── id(beca)
+                │   └── num(1)
+                └── =
+                    ├── id(activo)
+                    └── num(1)

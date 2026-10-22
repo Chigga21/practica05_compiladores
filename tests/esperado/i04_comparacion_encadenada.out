@@ -1,0 +1,4 @@
+Tokens: select * from id(alumnos) where id(edad) > num(18) > num(3) ; $
+
+Resultado: RECHAZADA
+Error sintáctico en 1:39: no se esperaba '>' (ACCION[36, >] está vacía). Se esperaba: or, and, ;, ).

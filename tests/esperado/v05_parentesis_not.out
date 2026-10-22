@@ -1,0 +1,24 @@
+Tokens: select * from id(cursos) where not ( id(creditos) < num(6) or id(tipo) = str('optativa') ) and id(cupo) > num(0) ; $
+
+Resultado: ACEPTADA
+
+AST:
+Script
+└── Select
+    ├── Columnas
+    │   └── *
+    ├── Tabla
+    │   └── id(cursos)
+    └── Where
+        └── AND
+            ├── NOT
+            │   └── OR
+            │       ├── <
+            │       │   ├── id(creditos)
+            │       │   └── num(6)
+            │       └── =
+            │           ├── id(tipo)
+            │           └── str('optativa')
+            └── >
+                ├── id(cupo)
+                └── num(0)

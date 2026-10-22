@@ -1,0 +1,15 @@
+Tokens: select id(nombre) from id(alumnos) where id(edad) > num(18) ; $
+
+Resultado: ACEPTADA
+
+AST:
+Script
+└── Select
+    ├── Columnas
+    │   └── id(nombre)
+    ├── Tabla
+    │   └── id(alumnos)
+    └── Where
+        └── >
+            ├── id(edad)
+            └── num(18)

@@ -1,0 +1,21 @@
+Tokens: select id , id from id where not ( id = num or id < str ) ; $
+
+Resultado: ACEPTADA
+
+AST:
+Script
+└── Select
+    ├── Columnas
+    │   ├── id
+    │   └── id
+    ├── Tabla
+    │   └── id
+    └── Where
+        └── NOT
+            └── OR
+                ├── =
+                │   ├── id
+                │   └── num
+                └── <
+                    ├── id
+                    └── str

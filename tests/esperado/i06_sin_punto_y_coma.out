@@ -1,0 +1,4 @@
+Tokens: select * from id(alumnos) where id(edad) > num(18) $
+
+Resultado: RECHAZADA
+Error sintáctico en 2:1: no se esperaba el fin de la entrada (ACCION[23, $] está vacía). Se esperaba: or, and, ;, ), =, <, >.

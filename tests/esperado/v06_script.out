@@ -1,0 +1,20 @@
+Tokens: select id(clave) from id(materias) ; select * from id(grupos) where id(semestre) = str('2026-1') ; $
+
+Resultado: ACEPTADA
+
+AST:
+Script
+├── Select
+│   ├── Columnas
+│   │   └── id(clave)
+│   └── Tabla
+│       └── id(materias)
+└── Select
+    ├── Columnas
+    │   └── *
+    ├── Tabla
+    │   └── id(grupos)
+    └── Where
+        └── =
+            ├── id(semestre)
+            └── str('2026-1')

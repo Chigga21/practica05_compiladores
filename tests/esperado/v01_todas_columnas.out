@@ -1,0 +1,11 @@
+Tokens: select * from id(alumnos) ; $
+
+Resultado: ACEPTADA
+
+AST:
+Script
+└── Select
+    ├── Columnas
+    │   └── *
+    └── Tabla
+        └── id(alumnos)

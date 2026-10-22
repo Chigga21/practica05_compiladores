@@ -1,0 +1,13 @@
+Tokens: select id(nombre) , id(edad) , id(carrera) from id(alumnos) ; $
+
+Resultado: ACEPTADA
+
+AST:
+Script
+└── Select
+    ├── Columnas
+    │   ├── id(nombre)
+    │   ├── id(edad)
+    │   └── id(carrera)
+    └── Tabla
+        └── id(alumnos)

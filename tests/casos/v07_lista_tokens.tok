@@ -1,0 +1,1 @@
+select id , id from id where not ( id = num or id < str ) ;

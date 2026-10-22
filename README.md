@@ -19,10 +19,10 @@ make clean
 ## Uso
 
 ```bash
-./slr consulta.sql                       # analiza un archivo
-./slr -e "select * from alumnos;"        # analiza el texto dado
-echo "select a from t;" | ./slr          # lee la entrada estándar
-./slr -k -e "select id , id from id ;"   # la entrada ya es una lista de tokens
+./slr consulta.sql                                       # analiza un archivo
+./slr -e "select * from alumnos;"                        # analiza el texto dado
+echo "select a from t;" | ./slr                          # lee la entrada estándar
+./slr -k -e "select id , id from id ;"                   # la entrada ya es una lista de tokens
 ./slr -t -r -e "select * from t where not a = 1;"
 ```
 
@@ -30,8 +30,8 @@ echo "select a from t;" | ./slr          # lee la entrada estándar
 |--------|--------|
 | `-e TEXTO` | analiza `TEXTO` en lugar de un archivo |
 | `-k` | la entrada es una lista de nombres de token |
-| `-t` | muestra la traza de la pila: contenido, entrada restante y acción de cada paso |
-| `-r` | muestra el árbol de reducciones (la regla aplicada en cada nodo) |
+| `-t` | muestra la ejecucion de la pila |
+| `-r` | muestra el árbol de reducciones |
 | `-h` | ayuda |
 
 Si la cadena es válida, el programa imprime `Resultado: ACEPTADA` y el AST, si no, imprime

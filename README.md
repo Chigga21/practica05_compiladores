@@ -19,10 +19,10 @@ make clean
 ## Uso
 
 ```bash
-./slr consulta.sql                                       # analiza un archivo
-./slr -e "select * from alumnos;"                        # analiza el texto dado
-echo "select a from t;" | ./slr                          # lee la entrada estándar
-./slr -k -e "select id , id from id ;"                   # la entrada ya es una lista de tokens
+./slr consulta.sql                                      
+./slr -e "select * from alumnos;"                        
+echo "select a from t;" | ./slr                         
+./slr -k -e "select id , id from id ;"                   
 ./slr -t -r -e "select * from t where not a = 1;"
 ```
 
